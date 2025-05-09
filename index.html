@@ -1,0 +1,1977 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Serviços profissionais de edição de vídeo para criadores de conteúdo e empresas. Planos acessíveis com qualidade premium.">
+    <meta name="keywords"
+        content="edição de vídeo, criação de conteúdo, vídeos para redes sociais, edição profissional">
+    <meta property="og:title" content="Iron - Serviços Profissionais de Edição de Vídeo">
+    <meta property="og:description"
+        content="Serviços profissionais de edição de vídeo para criadores de conteúdo e empresas. Planos acessíveis com qualidade premium.">
+    <meta property="og:type" content="website">
+    <title>Iron - Serviços Profissionais de Edição de Vídeo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --primary-dark: #020617;
+            --primary-light: #1e293b;
+            --secondary: #64748b;
+            --accent: #f43f5e;
+            --accent-light: #fb7185;
+            --light: #f9f1f1;
+            --dark: #0f172a;
+            --gray: #475569;
+            --light-gray: #e2e8f0;
+            --lighter-gray: #f8fafc;
+            --success: #10b981;
+            --warning: #f97316;
+            --danger: #ef4444;
+            --rounded: 12px;
+            --rounded-sm: 6px;
+            --rounded-md: 16px;
+            --rounded-lg: 24px;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            --gradient-accent: linear-gradient(135deg, var(--accent), var(--danger));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--lighter-gray);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            padding-top: 80px;
+            width: 100%;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: var(--rounded-lg);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .section-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            transform: rotate(30deg);
+        }
+
+        .section-header h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            position: relative;
+        }
+
+        .icon {
+            font-size: 1.6rem;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 2rem;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: bold;
+            box-shadow: var(--shadow);
+            z-index: 1;
+        }
+
+        .best-value {
+            background: linear-gradient(135deg, var(--success), #3a9e36);
+            color: white;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+            border-radius: 50px;
+            display: inline-block;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            border-radius: var(--rounded);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            gap: 0.5rem;
+            box-shadow: var(--shadow-sm);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            font-size: 1rem;
+        }
+
+        .btn::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+            transform: rotate(30deg);
+            transition: var(--transition);
+            opacity: 0;
+        }
+
+        .btn:hover::after {
+            opacity: 1;
+            transform: rotate(30deg) translate(20px, 20px);
+        }
+
+        .btn-primary {
+            background: var(--gradient-accent);
+            color: white;
+            box-shadow: 0 4px 15px rgba(244, 63, 94, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(244, 63, 94, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: rgba(15, 23, 42, 0.05);
+            transform: translateY(-3px);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .header h1 {
+            color: #ff4545;
+            background: none !important;
+            -webkit-text-fill-color: initial !important;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            color: var(--gray);
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: var(--rounded-md);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid var(--light-gray);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card.popular {
+            border: 2px solid var(--accent);
+            transform: scale(1.03);
+        }
+
+        .card.popular:hover {
+            transform: translateY(-10px) scale(1.03);
+        }
+
+        .card-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1.75rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            transform: rotate(30deg);
+        }
+
+        .card-header h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            position: relative;
+        }
+
+        .card-header p {
+            margin: 0.75rem 0 0;
+            opacity: 0.9;
+            font-size: 1rem;
+            position: relative;
+        }
+
+        .card-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .card-feature.highlight {
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        .card-feature.bonus {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .card-feature i {
+            color: var(--accent);
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
+            margin-top: 3px;
+        }
+
+        .card-price {
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: rgba(244, 63, 94, 0.05);
+            border-radius: var(--rounded);
+            text-align: center;
+            border: 1px dashed var(--accent-light);
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: var(--gray);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .current-price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin: 0.5rem 0;
+            line-height: 1;
+        }
+
+        .current-price::before {
+            content: "R$ ";
+            font-size: 1rem;
+            color: var(--gray);
+        }
+
+        .price-unit {
+            font-size: 1rem;
+            color: var(--gray);
+            font-weight: normal;
+        }
+
+        .economy {
+            color: var(--success);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: var(--rounded-sm);
+            margin-top: 0.5rem;
+            background-color: rgba(16, 185, 129, 0.1);
+        }
+
+        .card-benefits {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+            flex-grow: 1;
+        }
+
+        .card-benefits li {
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed var(--light-gray);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .card-benefits li:before {
+            content: "✓";
+            color: var(--success);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .card-benefits li:last-child {
+            border-bottom: none;
+        }
+
+        .card .btn {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            margin-top: auto;
+        }
+
+        .alert {
+            background-color: rgba(249, 115, 22, 0.1);
+            color: var(--warning);
+            padding: 1rem;
+            border-radius: var(--rounded-sm);
+            margin: 1rem 0;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            border-left: 4px solid var(--warning);
+        }
+
+        .alert i {
+            font-size: 1.2rem;
+        }
+
+        .testimonial {
+            background-color: var(--light-gray);
+            padding: 1rem;
+            border-radius: var(--rounded-sm);
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: var(--gray);
+            border-left: 4px solid var(--primary);
+        }
+
+        .testimonial strong {
+            font-style: normal;
+            color: var(--primary-dark);
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: var(--rounded-md);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-primary);
+        }
+
+        .feature-card.highlight-card::after {
+            background: var(--gradient-accent);
+        }
+
+        .feature-card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .feature-card h3 i {
+            color: var(--accent);
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 2rem;
+            line-height: 1.6;
+            font-size: 1rem;
+            color: var(--gray);
+        }
+
+        .feature-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+        }
+
+        .feature-list li strong {
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: white;
+            padding: 4rem 1.5rem;
+            border-radius: var(--rounded-lg);
+            margin-bottom: 3rem;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .cta-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-accent);
+        }
+
+        .cta-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-dark);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .cta-section p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .email-contact {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding: 1.25rem 2rem;
+            background-color: white;
+            border-radius: var(--rounded);
+            font-weight: 600;
+            color: var(--primary-dark);
+            border: 2px solid var(--light-gray);
+            transition: var(--transition);
+            gap: 0.75rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .email-contact:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+            border-color: var(--accent-light);
+            color: var(--accent);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .navbar-logo span {
+            color: var(--accent);
+        }
+
+        .navbar-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .navbar-menu a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .navbar-menu a:hover {
+            color: var(--accent);
+        }
+
+        .navbar-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-accent);
+            transition: var(--transition);
+        }
+
+        .navbar-menu a:hover::after {
+            width: 100%;
+        }
+
+        .navbar-mobile {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-dark);
+            background: none;
+            border: none;
+            padding: 0.5rem;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .gradient-basic {
+            background: linear-gradient(135deg, #64748b, #475569) !important;
+        }
+
+        .gradient-intermediate {
+            background: linear-gradient(135deg, #0f172a, #1e293b) !important;
+        }
+
+        .gradient-advanced {
+            background: linear-gradient(135deg, #020617, #0f172a) !important;
+        }
+
+        .gradient-short {
+            background: var(--gradient-accent) !important;
+        }
+
+        .gradient-medium {
+            background: linear-gradient(135deg, #f97316, #f59e0b) !important;
+        }
+
+        .gradient-long {
+            background: linear-gradient(135deg, #10b981, #059669) !important;
+        }
+
+        .explanation {
+            text-align: center;
+            margin: 3rem auto;
+            max-width: 800px;
+            color: var(--gray);
+            font-size: 1.1rem;
+            padding: 0 1.5rem;
+            line-height: 1.8;
+        }
+
+        .explanation p {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed var(--light-gray);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .faq-item h4 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .faq-item p {
+            color: var(--gray);
+            font-size: 1rem;
+            padding-left: 2rem;
+            line-height: 1.7;
+        }
+
+        .simplified-price-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .price-column {
+            background: white;
+            border-radius: var(--rounded-md);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid var(--light-gray);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .price-column.popular {
+            border: 2px solid var(--accent);
+            transform: scale(1.03);
+        }
+
+        .price-column:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .price-column.popular:hover {
+            transform: translateY(-10px) scale(1.03);
+        }
+
+        .price-header {
+            color: white;
+            padding: 1.75rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            transform: rotate(30deg);
+        }
+
+        .price-header h3 {
+            margin: 0;
+            font-size: 1.6rem;
+            position: relative;
+        }
+
+        .price-header p {
+            margin: 0.75rem 0 0;
+            opacity: 0.9;
+            font-size: 1.05rem;
+            position: relative;
+        }
+
+        .price-body {
+            padding: 2rem;
+        }
+
+        .price-amount {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .current-price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: block;
+            line-height: 1;
+            margin: 0.5rem 0;
+        }
+
+        .price-note {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        .price-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem 0;
+        }
+
+        .price-features li {
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 1rem;
+            line-height: 1.6;
+            border-bottom: 1px dashed var(--light-gray);
+        }
+
+        .price-features li:last-child {
+            border-bottom: none;
+        }
+
+        .price-features li i {
+            color: var(--accent);
+            margin-top: 0.3rem;
+            font-size: 1.1rem;
+        }
+
+        .price-explanation {
+            background: white;
+            border-radius: var(--rounded-md);
+            padding: 2rem;
+            margin: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .editing-levels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .level-card {
+            background: white;
+            border-radius: var(--rounded-md);
+            padding: 1.5rem 1rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--light-gray);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .level-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .level-card h5 {
+            padding: 1rem;
+            border-radius: var(--rounded-sm);
+            color: white;
+            margin: -1.5rem -1rem 1.5rem -1rem;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .price-range {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--secondary);
+            margin-top: 0.75rem;
+            font-weight: 500;
+        }
+
+        .highlight-badge {
+            background-color: rgba(244, 63, 94, 0.1);
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: var(--rounded-sm);
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.5rem 0;
+            border: 1px dashed var(--accent-light);
+        }
+
+        .intro-text {
+            margin-bottom: 1.5rem;
+            color: var(--gray);
+            line-height: 1.7;
+        }
+
+        /* Estilos para o formulário de solicitação */
+        .request-form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .request-form {
+            background: white;
+            border-radius: var(--rounded-md);
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.75rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--light-gray);
+            border-radius: var(--rounded-sm);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.1);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 1.25rem;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+
+        .form-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-dark);
+        }
+
+        .form-title h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.75rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .form-title p {
+            color: var(--gray);
+            font-size: 1.05rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        .section:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .section:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .section:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        .footer-logo span {
+            color: var(--accent-light);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-social a {
+            color: white;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            color: var(--accent-light);
+            transform: translateY(-3px);
+        }
+
+        .footer-copyright {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 992px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .header p {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem 1rem;
+                padding-top: 70px;
+            }
+
+            .header h1 {
+                font-size: 2.2rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.5rem;
+            }
+
+            .cta-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .features-grid,
+            .card-container,
+            .simplified-price-table {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-group {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .navbar-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 80%;
+                height: calc(100vh - 70px);
+                background: white;
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem 0;
+                box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+            }
+
+            .navbar-menu.active {
+                left: 0;
+            }
+
+            .navbar-mobile {
+                display: block;
+            }
+
+            .popular-badge {
+                right: -35px;
+                font-size: 0.7rem;
+                padding: 0.2rem 1.5rem;
+            }
+
+            .price-column.popular {
+                transform: none;
+            }
+
+            .price-column.popular:hover {
+                transform: translateY(-10px);
+            }
+
+            .request-form-container {
+                padding: 1rem;
+            }
+
+            .request-form {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .current-price {
+                font-size: 1.5rem;
+            }
+
+            .email-contact {
+                font-size: 0.95rem;
+                padding: 1rem;
+            }
+
+            .request-form {
+                padding: 1.25rem;
+            }
+        }
+
+        .price-body .btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<canvas id="particles-background"></canvas>
+
+<script>
+    const canvas = document.getElementById('particles-background');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particles = [];
+    const particleCount = 100;
+
+    for (let i = 0; i < particleCount; i++) {
+        particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            size: Math.random() * 3 + 1,
+            speedX: Math.random() * 1 - 0.5,
+            speedY: Math.random() * 1 - 0.5
+        });
+    }
+
+    function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = 'rgba(244, 63, 94, 0.5)';
+
+        for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+            ctx.fill();
+
+            p.x += p.speedX;
+            p.y += p.speedY;
+
+            if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
+            if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
+        }
+
+        requestAnimationFrame(animateParticles);
+    }
+
+    animateParticles();
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+</script>
+
+<style>
+    #particles-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    }
+
+    body {
+        background-color: #0f172a;
+    }
+</style>
+
+<body>
+    <nav class="navbar" aria-label="Navegação principal">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <i class="fas fa-play-circle"></i> Soluções<span>em Vídeo</span>
+            </a>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="#servicos" aria-label="Serviços"><i class="fas fa-video" aria-hidden="true"></i>
+                        Serviços</a></li>
+                <li><a href="#planos" aria-label="Planos"><i class="far fa-calendar-alt" aria-hidden="true"></i>
+                        Planos</a></li>
+                <li><a href="#criadores" aria-label="Criadores"><i class="fas fa-star" aria-hidden="true"></i>
+                        Criadores</a></li>
+                <li><a href="#contato" aria-label="Contato"><i class="fas fa-envelope" aria-hidden="true"></i>
+                        Contato</a></li>
+
+            </ul>
+            <button class="navbar-mobile" aria-label="Abrir menu" aria-expanded="false" id="navbar-toggle">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="titulo-principal">Soluções Profissionais em Edição de Vídeo</h1>
+            <p>Dê vida nova ao seu conteúdo visual com nossa edição profissional. Criamos pacotes sob medida para
+                criadores, marcas e agências que buscam unir excelência técnica à criatividade.</p>
+        </header>
+
+        <section class="section" id="servicos">
+            <div class="section-header">
+                <h2><i class="fas fa-clock icon" aria-hidden="true"></i> Faixas de Preços</h2>
+            </div>
+
+            <div class="explanation">
+                <p>Nossos preços são flexíveis e adaptados às suas necessidades específicas. Eles variam de acordo com a
+                    duração do vídeo e o nível de edição necessário. Escolha a opção que melhor se adapta ao seu
+                    projeto:</p>
+            </div>
+
+            <div class="simplified-price-table">
+                <div class="price-column">
+                    <div class="price-header gradient-short">
+                        <h3>Curto</h3>
+                        <p>Até 5 minutos</p>
+                    </div>
+                    <div class="price-body">
+                        <div class="price-amount">
+                            <span class="current-price">10,00 - 30,00</span>
+                            <span class="price-note">por vídeo</span>
+                        </div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> <strong>Ideal para:</strong> Reels,
+                                Shorts, TikTok</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Formatos verticais (9:16)</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Otimizado para mobile</li>
+                            <li><i class="fas fa-stopwatch" aria-hidden="true"></i> <strong>Prazo normal:</strong> 1-2
+                                dias</li>
+                            <li><i class="fas fa-bolt" aria-hidden="true"></i> <strong>Urgente (+80%):</strong> 12-24h
+                            </li>
+                        </ul>
+                        <div class="price-request-btn">
+                            <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-column popular">
+                    <div class="popular-badge">Mais Pedido</div>
+                    <div class="price-header gradient-medium">
+                        <h3>Médio</h3>
+                        <p>5-10 minutos</p>
+                    </div>
+                    <div class="price-body">
+                        <div class="price-amount">
+                            <span class="current-price">20,00 - 50,00</span>
+                            <span class="price-note">por vídeo</span>
+                        </div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> <strong>Ideal para:</strong> Vlogs,
+                                Tutoriais, Gameplays</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Versões para múltiplas plataformas</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Miniatura básica incluída</li>
+                            <li><i class="fas fa-stopwatch" aria-hidden="true"></i> <strong>Prazo normal:</strong> 2-3
+                                dias</li>
+                            <li><i class="fas fa-bolt" aria-hidden="true"></i> <strong>Urgente (+60%):</strong> 1-2 dias
+                            </li>
+                        </ul>
+                        <div class="price-request-btn">
+                            <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-column">
+                    <div class="price-header gradient-long">
+                        <h3>Longo</h3>
+                        <p>10-20 minutos</p>
+                    </div>
+                    <div class="price-body">
+                        <div class="price-amount">
+                            <span class="current-price">40,00 - 100,00</span>
+                            <span class="price-note">por vídeo</span>
+                        </div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> <strong>Ideal para:</strong>
+                                Documentários, Aulas, Corporativo</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Estrutura profissional</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Legendas profissionais</li>
+                            <li><i class="fas fa-stopwatch" aria-hidden="true"></i> <strong>Prazo normal:</strong> 4-5
+                                dias</li>
+                            <li><i class="fas fa-bolt" aria-hidden="true"></i> <strong>Urgente (+50%):</strong> 2-3 dias
+                            </li>
+                        </ul>
+                        <div class="price-request-btn">
+                            <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card highlight-card">
+                    <h3><i class="fas fa-info-circle" aria-hidden="true"></i> Como funciona a variação de preço?</h3>
+                    <p class="intro-text">O valor dentro de cada faixa depende do <strong>nível de edição</strong>
+                        escolhido e da complexidade do projeto:</p>
+
+                    <div class="editing-levels">
+                        <div class="level-card">
+                            <h5 class="gradient-basic">Básica</h5>
+                            <p>Cortes, transições e ajustes simples</p>
+                            <span class="price-range">(Valor inferior da faixa)</span>
+                        </div>
+
+                        <div class="level-card">
+                            <h5 class="gradient-intermediate">Intermediária</h5>
+                            <p>Motion graphics básicos, cortes dinâmicos e correção profissional</p>
+                            <span class="price-range">(Valor médio da faixa)</span>
+                        </div>
+
+                        <div class="level-card">
+                            <h5 class="gradient-advanced">Avançada</h5>
+                            <p>Efeitos visuais e color grading profissional</p>
+                            <span class="price-range">(Valor superior da faixa)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <h3><i class="fas fa-chart-bar" aria-hidden="true"></i> Comparativo de Benefícios</h3>
+                    <ul class="feature-list">
+                        <li><strong>Curto:</strong> Melhor para engajamento rápido e conteúdo frequente com alta taxa de
+                            retenção</li>
+                        <li><strong>Médio:</strong> Equilíbrio perfeito entre profundidade de conteúdo e retenção de
+                            atenção</li>
+                        <li><strong>Longo:</strong> Ideal para conteúdo educativo ou detalhado com público fiel</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3><i class="fas fa-question-circle" aria-hidden="true"></i> Como escolher a duração ideal?</h3>
+                    <div class="faq-item">
+                        <h4><i class="fas fa-mobile-alt" style="color: var(--accent);" aria-hidden="true"></i> Para
+                            redes sociais</h4>
+                        <p>Vídeos curtos (até 5 min) têm melhor desempenho no Instagram e TikTok, com taxas de
+                            engajamento até 3x maiores.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4><i class="fab fa-youtube" style="color: var(--accent);" aria-hidden="true"></i> Para YouTube
+                        </h4>
+                        <p>Vídeos médios (5-10 min) são ideais para tutoriais, gameplays e vlogs, com melhor
+                            monetização.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4><i class="fas fa-graduation-cap" style="color: var(--accent);" aria-hidden="true"></i> Para
+                            cursos e aulas</h4>
+                        <p>Vídeos longos (10-20 min) permitem conteúdo mais detalhado e reduzem a fragmentação do
+                            aprendizado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="planos">
+            <div class="section-header">
+                <h2><i class="far fa-calendar-alt icon" aria-hidden="true"></i> Planos Mensais</h2>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header gradient-basic">
+                        <h3>Iniciante</h3>
+                        <p>Para quem está começando</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-price">
+                            <div class="current-price">120,00</div>
+                            <div class="economy">Economize até R$50/mês</div>
+                        </div>
+                        <ul class="card-benefits">
+                            <li>15 vídeos (até 5 min)</li>
+                            <li>Edição Intermediária</li>
+                            <li>Prioridade média</li>
+                            <li>2 revisões por vídeo</li>
+                            <li>Vídeos extras: R$5,00/un</li>
+                        </ul>
+                        <div class="alert">
+                            <i class="fas fa-bolt" aria-hidden="true"></i> Serviço urgente: +80% do valor
+                        </div>
+                        <a href="#contato" class="btn btn-primary">Quero este plano</a>
+                    </div>
+                </div>
+
+                <div class="card popular">
+                    <div class="popular-badge">Mais Pedido</div>
+                    <div class="card-header gradient-intermediate">
+                        <h3>Creator</h3>
+                        <p>Para criadores em crescimento</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-price">
+                            <div class="current-price">280,00</div>
+                            <div class="economy">Economize até R$150/mês</div>
+                        </div>
+                        <ul class="card-benefits">
+                            <li>8 vídeos (até 10 min)</li>
+                            <li>Edição Intermediária</li>
+                            <li>Prioridade alta</li>
+                            <li>3 revisões por vídeo</li>
+                            <li>Miniatura grátis</li>
+                            <li>Vídeos extras: R$20,00/un</li>
+                        </ul>
+                        <div class="alert">
+                            <i class="fas fa-bolt" aria-hidden="true"></i> Serviço urgente: +50% do valor
+                        </div>
+                        <a href="#contato" class="btn btn-primary">Quero este plano</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header gradient-advanced">
+                        <h3>Premium</h3>
+                        <p>Para profissionais exigentes</p>
+                        <div class="best-value">Melhor Custo-Benefício</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-price">
+                            <div class="current-price">550,00</div>
+                            <div class="economy">Economize até R$100/mês</div>
+                        </div>
+                        <ul class="card-benefits">
+                            <li>4 vídeos (até 20 min)</li>
+                            <li>Edição Avançada</li>
+                            <li>Prioridade máxima</li>
+                            <li>Revisões ilimitadas</li>
+                            <li>Legendagem completa</li>
+                            <li>Vídeos extras: R$50,00/un</li>
+                        </ul>
+                        <div class="alert">
+                            <i class="fas fa-bolt" aria-hidden="true"></i> Serviço urgente: +30% do valor
+                        </div>
+                        <a href="#contato" class="btn btn-primary">Quero este plano</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3><i class="fas fa-piggy-bank" aria-hidden="true"></i> Economize com Planos Mensais</h3>
+                    <ul class="feature-list">
+                        <li><strong>Iniciante:</strong> Economize R$50/mês (33%) comparado a edições avulsas</li>
+                        <li><strong>Creator:</strong> Economize R$150/mês (38%) comparado a edições avulsas</li>
+                        <li><strong>Premium:</strong> Economize R$100/mês (25%) comparado a edições avulsas</li>
+                        <li><i class="fas fa-gem" style="color: var(--accent);" aria-hidden="true"></i>
+                            <strong>Bônus Exclusivo:</strong> 10% de desconto adicional em planos trimestrais
+                        </li>
+                    </ul>
+                    <div class="alert" style="margin-top: 1.5rem;">
+                        <i class="fas fa-info-circle" aria-hidden="true"></i> Quanto mais vídeos você produzir, maior
+                        será sua economia! Nos planos mensais, cada vídeo adicional tem desconto progressivo.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <h3><i class="fas fa-question-circle" aria-hidden="true"></i> Dúvidas Comuns</h3>
+                    <div class="faq-item">
+                        <h4><i class="fas fa-sync-alt" style="color: var(--accent);" aria-hidden="true"></i> Posso mudar
+                            de plano?</h4>
+                        <p>Sim! Você pode alterar seu plano a qualquer momento. A diferença de valor será ajustada
+                            proporcionalmente e aplicada no próximo ciclo de pagamento.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4><i class="fas fa-calendar" style="color: var(--accent);" aria-hidden="true"></i> Vídeos não
+                            utilizados acumulam?</h4>
+                        <p>Infelizmente não. Os vídeos são resetados todo mês para manter a qualidade do serviço, por
+                            isso recomendamos planejar seu conteúdo com antecedência.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4><i class="fas fa-bolt" style="color: var(--accent);" aria-hidden="true"></i> E se precisar
+                            de mais vídeos?</h4>
+                        <p>Cada plano tem valores especiais para vídeos extras, muito abaixo dos preços avulsos. Entre
+                            em contato para saber sobre nossos pacotes complementares.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="criadores">
+            <div class="section-header">
+                <h2><i class="fas fa-star icon" aria-hidden="true"></i> Pacotes para Criadores de Conteúdo</h2>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header gradient-basic">
+                        <h3>Pacote Light</h3>
+                        <p>Para quem produz conteúdo frequente e busca qualidade sem gastar muito</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-feature">
+                            <i class="fas fa-film" aria-hidden="true"></i>
+                            <span>5 vídeos completos</span>
+                        </div>
+                        <div class="card-feature highlight">
+                            <i class="fas fa-cut" aria-hidden="true"></i>
+                            <span>+ 5 cortes otimizados</span>
+                        </div>
+                        <div class="card-price">
+                            <div class="current-price">180,00</div>
+                            <div class="economy">R$36,00 por vídeo</div>
+                        </div>
+                        <ul class="card-benefits">
+                            <li><strong>Duração:</strong> Até 5 minutos cada</li>
+                            <li>Edição Intermediária</li>
+                            <li>1 corte por vídeo incluído</li>
+                            <li>Formatos 9:16 e 1:1</li>
+                            <li>Prazo: 1-2 dias por vídeo</li>
+                        </ul>
+                        <div class="alert">
+                            <i class="fas fa-bolt" aria-hidden="true"></i> Serviço urgente: +80% do valor
+                        </div>
+                        <a href="#contato" class="btn btn-primary">Quero este pacote</a>
+                    </div>
+                </div>
+
+                <div class="card popular">
+                    <div class="popular-badge">Mais Pedido</div>
+                    <div class="card-header gradient-intermediate">
+                        <h3>Pacote Pro</h3>
+                        <p>Para criadores que querem impacto máximo com conteúdo estratégico</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-feature">
+                            <i class="fas fa-film" aria-hidden="true"></i>
+                            <span>8 vídeos completos</span>
+                        </div>
+                        <div class="card-feature highlight">
+                            <i class="fas fa-cut" aria-hidden="true"></i>
+                            <span>+ 16 cortes estratégicos</span>
+                        </div>
+                        <div class="card-feature bonus">
+                            <i class="fas fa-image" aria-hidden="true"></i>
+                            <span>3 miniaturas básicas</span>
+                        </div>
+                        <div class="card-price">
+                            <div class="current-price">290,00</div>
+                            <div class="economy">R$36,25 por vídeo</div>
+                        </div>
+                        <ul class="card-benefits">
+                            <li><strong>Duração:</strong> Até 10 minutos cada</li>
+                            <li>Edição Intermediária</li>
+                            <li>2 cortes por vídeo</li>
+                            <li>Versões 9:16 + 1:1 + 16:9</li>
+                            <li>Prazo: 2-3 dias por vídeo</li>
+                        </ul>
+                        <div class="alert">
+                            <i class="fas fa-bolt" aria-hidden="true"></i> Serviço urgente: +50% do valor
+                        </div>
+                        <a href="#contato" class="btn btn-primary">Quero este pacote</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header gradient-advanced">
+                        <h3>Full Content</h3>
+                        <p>Solução completa para quem exige o melhor em cada detalhe</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-feature">
+                            <i class="fas fa-film" aria-hidden="true"></i>
+                            <span>12 vídeos completos</span>
+                        </div>
+                        <div class="card-feature highlight">
+                            <i class="fas fa-cut" aria-hidden="true"></i>
+                            <span>+ 36 cortes estratégicos</span>
+                        </div>
+                        <div class="card-price">
+                            <div class="current-price">420,00</div>
+                            <div class="economy">R$35,00 por vídeo</div>
+                        </div>
+                        <ul class="card-benefits">
+                            <li><strong>Duração:</strong> Até 20 minutos cada</li>
+                            <li>Edição Avançada</li>
+                            <li>3 cortes por vídeo</li>
+                            <li>Formatos personalizados</li>
+                            <li>Legendagem profissional</li>
+                            <li>Prazo: 4-5 dias por vídeo</li>
+                        </ul>
+                        <div class="alert">
+                            <i class="fas fa-bolt" aria-hidden="true"></i> Serviço urgente: +30% do valor
+                        </div>
+                        <a href="#contato" class="btn btn-primary">Quero este pacote</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3><i class="fas fa-list-check" aria-hidden="true"></i> O que inclui cada serviço?</h3>
+                    <ul class="feature-list">
+                        <li><strong>Básico:</strong> Cortes precisos, transições básicas, ajuste de cor e luz, trilha
+                            sonora sincronizada, legenda simples e otimização para plataformas</li>
+                        <li><strong>Intermediário:</strong> Todos os itens básicos + motion graphics personalizados,
+                            correção profissional de áudio e cor, transições dinâmicas e efeitos sonoros</li>
+                        <li><strong>Avançado:</strong> Todos os itens intermediários + efeitos visuais complexos, color
+                            grading profissional, animações customizadas e mixagem de áudio avançada</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card highlight-card">
+                    <h3><i class="fas fa-cut" aria-hidden="true"></i> Sobre os Cortes Estratégicos</h3>
+                    <ul class="feature-list">
+                        <li><strong>Versões adaptadas</strong> do conteúdo principal para cada plataforma (Instagram,
+                            TikTok, YouTube, etc)</li>
+                        <li><strong>Não são recortes simples</strong>, mas reedições completas com novas aberturas,
+                            encerramentos e destaques</li>
+                        <li><strong>Incluem</strong> legendas reposicionadas, formatos específicos e otimização para
+                            cada tipo de consumo</li>
+                        <li><strong>1 vídeo principal</strong> pode gerar 3-5 conteúdos diferentes, maximizando seu
+                            alcance</li>
+                        <li><span class="highlight-badge">Bônus:</span> Relatório de performance com sugestões de
+                            melhoria para seus próximos vídeos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h4><i class="fas fa-file-contract icon"></i> Termos e Condições</h4>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card highlight-card">
+                    <h3><i class="fas fa-money-bill-wave" aria-hidden="true"></i> Financeiro</h3>
+                    <p class="intro-text">Para garantir a organização do projeto e qualidade do serviço, estabelecemos
+                        um fluxo de pagamento claro:</p>
+                    <ul class="feature-list">
+                        <li><strong>50% adiantado</strong> via PIX (ou 100% para desconto de 5%) - enviamos comprovante
+                            detalhado</li>
+                        <li><strong>50% na entrega</strong> (link de pagamento seguro enviado junto com a prévia do
+                            vídeo)</li>
+                        <li><span class="highlight-badge">Nota fiscal</span> incluída em todos os serviços</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card highlight-card">
+                    <h3><i class="fas fa-cloud-upload-alt" aria-hidden="true"></i> Entrega</h3>
+                    <ul class="feature-list">
+                        <li>Material enviado via <strong>Google Drive</strong> (acesso ilimitado) ou
+                            <strong>WeTransfer</strong> (válido por 7 dias)
+                        </li>
+                        <li><strong>Formato padrão</strong>: MP4 (1080p) + legendas em .SRT + versão otimizada para
+                            mobile</li>
+                        <li><strong>Armazenamento</strong>: 30 dias gratuitos (após isso, <strong>R$20/mês</strong> para
+                            backup profissional)</li>
+                        <li><strong>Prioridade</strong>: Entregas antes das 18h (exceto urgente) com relatório de
+                            qualidade</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card highlight-card">
+                    <h3><i class="fas fa-sync-alt" aria-hidden="true"></i> Revisões</h3>
+                    <ul class="feature-list">
+                        <li><strong>2 revisões gratuitas</strong> por vídeo (solicitadas em até 7 dias após entrega)
+                        </li>
+                        <li><strong>Revisões extras</strong>: R$15/cada (ou pacote de 5x por R$60 - economize 20%)</li>
+                        <li><span class="highlight-badge">Alterações estruturais:</span> mudanças significativas no
+                            conceito original exigem novo orçamento</li>
+                        <li>Sistema de <strong>aprovação por etapa</strong> disponível para projetos complexos</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card highlight-card">
+                    <h3><i class="far fa-clock" aria-hidden="true"></i> Prazos</h3>
+                    <ul class="feature-list">
+                        <li>Contagem inicia após <strong>pagamento confirmado</strong> e briefing completo (formulário
+                            detalhado fornecido por nós)</li>
+                        <li>Dias Úteis: <strong>Segunda à sábado</strong> (exceto feriados nacionais)</li>
+                        <li>Serviços urgentes tem <strong>prioridade absoluta</strong> e equipe dedicada</li>
+                        <li><span class="highlight-badge">Atrasos:</span> 10% de desconto por dia de atraso não
+                            justificado</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card highlight-card">
+                    <h3><i class="fas fa-ban" aria-hidden="true"></i> Cancelamentos</h3>
+                    <ul class="feature-list">
+                        <li><span class="highlight-badge"><strong>Cancelamento em até 24h</strong> após
+                                pagamento:</span> Reembolso de 80% do valor ou crédito integral + bônus de 10%</li>
+                        <li><strong>Cancelamento após 24h mas antes do início da edição:</strong> Reembolso de 50% ou
+                            crédito integral + bônus de 5%</li>
+                        <li><strong>Após início</strong>: Sem reembolso, mas arquivos parcialmente editados são enviados
+                            em alta qualidade</li>
+                        <li>Planos mensais: cancelamento com <strong>15 dias de antecedência</strong></li>
+                    </ul>
+                </div>
+
+                <div class="feature-card highlight-card">
+                    <h3><i class="fas fa-file-alt" aria-hidden="true"></i> Requisitos</h3>
+                    <p class="intro-text">Para uma edição de alta qualidade e resultados excepcionais, pedimos atenção a
+                        alguns detalhes técnicos:</p>
+                    <ul class="feature-list">
+                        <li><strong>Áudio claro</strong>: Gravação em ambiente controlado (evite ruídos de fundo)</li>
+                        <li><strong>Resolução mínima</strong>: 1080p recomendado (aceitamos 720p com taxa de bits alta)
+                        </li>
+                        <li><strong>Briefing completo</strong>: Nosso formulário guia você com instruções claras para
+                            garantir o melhor resultado</li>
+                        <li><strong>Arquivos organizados</strong>: Nomeie seus arquivos de forma clara (ex:
+                            "01_abertura.mp4")</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" id="contato">
+            <h2>Pronto para elevar seu conteúdo?</h2>
+            <p>Entre em contato para discutir seu projeto, receber uma proposta personalizada e tirar todas suas dúvidas
+                com nosso time especializado.</p>
+
+            <div class="btn-group">
+                <a href="https://wa.me/5571992853309" class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+                    aria-label="Contato via WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                </a>
+                <a href="https://instagram.com/ironc.post" class="btn btn-outline" target="_blank"
+                    rel="noopener noreferrer" aria-label="Contato via Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+                </a>
+            </div>
+
+            <div class="email-contact">
+                <i class="fas fa-envelope" aria-hidden="true"></i> iron.comercial26@gmail.com
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Iron<span> Cruz</span></div>
+            <div class="footer-links">
+                <a href="#servicos">Serviços</a>
+                <a href="#planos">Planos</a>
+                <a href="#criadores">Criadores</a>
+                <a href="https://ironcruz.vercel.app" target="_blank" rel="noopener noreferrer">Portfólio</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://wa.me/5571992853309" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/ironc.post" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:iron.comercial26@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2023 Iron. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.querySelector('.navbar-mobile');
+            const menu = document.querySelector('.navbar-menu');
+
+            if (mobileMenuBtn && menu) {
+                mobileMenuBtn.addEventListener('click', function () {
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    menu.classList.toggle('active');
+                    this.innerHTML = isExpanded
+                        ? '<i class="fas fa-bars" aria-hidden="true"></i>'
+                        : '<i class="fas fa-times" aria-hidden="true"></i>';
+                });
+            }
+
+            const navbar = document.querySelector('.navbar');
+            if (navbar) {
+                window.addEventListener('scroll', function () {
+                    navbar.classList.toggle('scrolled', window.scrollY > 50);
+                });
+            }
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        // Fechar menu mobile se estiver aberto
+                        if (menu && menu.classList.contains('active')) {
+                            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                            menu.classList.remove('active');
+                            mobileMenuBtn.innerHTML = '<i class="fas fa-bars" aria-hidden="true"></i>';
+                        }
+
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Adicionar classe ativa ao item do menu conforme scroll
+            const sections = document.querySelectorAll('.section, .cta-section');
+            const menuItems = document.querySelectorAll('.navbar-menu a');
+
+            function activateMenu() {
+                let index = sections.length;
+
+                while (--index && window.scrollY + 100 < sections[index].offsetTop) { }
+
+                menuItems.forEach(item => item.classList.remove('active'));
+                if (menuItems[index]) menuItems[index].classList.add('active');
+            }
+
+            window.addEventListener('scroll', activateMenu);
+            activateMenu(); // Ativar no carregamento
+
+            // Efeito de digitação no título (opcional)
+            const title = document.querySelector('.header h1');
+            if (title) {
+                const text = title.textContent;
+                title.textContent = '';
+
+                let i = 0;
+                const typingEffect = setInterval(() => {
+                    if (i < text.length) {
+                        title.textContent += text.charAt(i);
+                        i++;
+                    } else {
+                        clearInterval(typingEffect);
+                    }
+                }, 50);
+            }
+
+            // Animação de hover nos cards
+            const cards = document.querySelectorAll('.card, .price-column, .feature-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = card.classList.contains('popular')
+                        ? 'translateY(-10px) scale(1.03)'
+                        : 'translateY(-10px)';
+                    card.style.boxShadow = '0 15px 30px rgba(0,0,0,0.15)';
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = card.classList.contains('popular')
+                        ? 'scale(1.03)'
+                        : 'translateY(0)';
+                    card.style.boxShadow = 'var(--shadow)';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
